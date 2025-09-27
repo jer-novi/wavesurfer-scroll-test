@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WaveSurfer Test</title>
+    <style>
+      body {
+        margin: 20px;
+        font-family: Arial, sans-serif;
+      }
+      #waveform {
+        border: 1px solid #ddd;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WaveSurfer Scrollbar Test</h1>
+
+    <label>Zoom: <input type="range" min="10" max="1000" value="100" /></label>
+
+    <div style="margin: 10px 0">
+      <label
+        ><input type="checkbox" checked value="scrollbar" /> Scroll bar</label
+      >
+      <label
+        ><input type="checkbox" checked value="fillParent" /> Fill parent</label
+      >
+      <label
+        ><input type="checkbox" checked value="autoCenter" /> Auto center</label
+      >
+    </div>
+
+    <div style="margin: 10px 0">
+      <button id="play">Play/Pause</button>
+      <button id="backward">Backward 5s</button>
+      <button id="forward">Forward 5s</button>
+    </div>
+
+    <div id="waveform"></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
